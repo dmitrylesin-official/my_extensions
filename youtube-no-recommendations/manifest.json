@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Без Рекомендаций",
+  "version": "1.0",
+  "description": "Убирает рекомендации, связанные видео и подборки с YouTube",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
