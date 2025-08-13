@@ -8,31 +8,27 @@ function hideRecommendations() {
     'ytd-compact-video-renderer',
     '.ytd-recommended-video-renderer',
     '#comments',
-
     '.ytp-ad-module',
     '#player-ads',
     '.ytd-companion-slot-renderer',
     '.ytd-action-companion-ad-renderer',
-    '.ytd-player-legacy-desktop-watch-ads-renderer', 
+    '.ytd-player-legacy-desktop-watch-ads-renderer',
     '.ytp-ad-player-overlay',
     '.ytp-ad-skip-button',
-    '.ytp-ad-text'
+    '.ytp-ad-text',
+    'ytd-reel-shelf-renderer',
+    'ytd-reel-video-renderer',
+    'a[href*="/shorts/"]'      
   ];
 
   selectors.forEach(selector => {
-    const elements = document.querySelectorAll(selector);
-    elements.forEach(el => {
-      if (el) {
-        el.style.display = 'none';
-      }
+    document.querySelectorAll(selector).forEach(el => {
+      el.style.display = 'none';
     });
   });
 }
 
 hideRecommendations();
 
-const observer = new MutationObserver(hideRecommendations);
-observer.observe(document.body, {
-  childList: true,
-  subtree: true
-});
+new MutationObserver(hideRecommendations)
+  .observe(document.body, { childList: true, subtree: true });
