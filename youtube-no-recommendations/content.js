@@ -6,7 +6,8 @@ function hideRecommendations() {
     'ytd-rich-grid-renderer',
     'ytd-rich-item-renderer',
     'ytd-compact-video-renderer',
-    '.ytd-recommended-video-renderer'
+    '.ytd-recommended-video-renderer',
+    '#comments'
   ];
 
   selectors.forEach(selector => {
@@ -26,3 +27,4 @@ observer.observe(document.body, {
   childList: true,
   subtree: true
 });
+
