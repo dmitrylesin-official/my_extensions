@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube No Recommendations",
   "version": "1.0",
-  "description": "Hides recommendations, related videos, and suggestions on YouTube.",
+  "description": "Hides recommendations, related videos, suggestions, comments, and ads on YouTube, but keeps video description visible.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
