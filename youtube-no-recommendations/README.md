@@ -1,10 +1,11 @@
 # YouTube No Recommendations Extension
 
-A simple Chrome browser extension that hides recommendations, related videos, and suggestions on YouTube for a distraction-free experience.
+A simple Chrome browser extension that hides recommendations, related videos, suggestions, comments, and ads on YouTube for a distraction-free experience, while keeping the video description visible.
 
 ## Features
-- Automatically hides sidebars, "Next Up" sections, and home page grids.
-- Uses MutationObserver to handle dynamic content loading.
+- Automatically hides sidebars, "Next Up" sections, home page grids, comments, and various ad elements.
+- Keeps the video description (under the player) fully visible.
+- Uses MutationObserver to handle dynamic content loading and updates.
 
 ## Installation
 1. Clone or download this repository.
@@ -15,8 +16,4 @@ A simple Chrome browser extension that hides recommendations, related videos, an
 
 ## Usage
 - The extension runs automatically on `https://www.youtube.com/*`.
-- Customize selectors in `content.js` if YouTube updates its layout.
-
-## Notes
-- Selectors might break with YouTube updates—update `content.js` as needed.
-- No permissions required; fully local.
+- Customize selectors in `content.js` if YouTube updates its layout (e.g., new ad formats).
