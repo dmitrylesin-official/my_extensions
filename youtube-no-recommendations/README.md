@@ -1,3 +1,5 @@
+<img src="icons/icon128.png" alt="Логотип YouTube No Recommendations" width="200" />
+
 # YouTube No Recommendations Extension
 
 A simple Chrome browser extension that hides recommendations, related videos, suggestions, comments, and ads on YouTube for a distraction-free experience, while keeping the video description visible.
